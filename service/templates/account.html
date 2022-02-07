@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
 {% block title%} Account {% endblock %}
 
 {% block body %}
          <!--Inner Header Start-->
-         <section class="wf100 p100 inner-header">
+         <section class=" p100 inner-header">
             <div class="container">
                <h1>My Account</h1>
                <ul>
@@ -20,7 +21,8 @@
                   <div class="col-lg-8">
                      <div class="myaccount-form">
                         <h3>Register Your Account</h3>
-                        <form>
+                        <form method="post" novalidate>
+
                            <ul class="row">
                               <li class="col-md-6">
                                  <div class="input-group">

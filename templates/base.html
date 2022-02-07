@@ -20,36 +20,69 @@
     <link href="{% static 'css/all.min.css' %}" rel="stylesheet">
     <link href="{% static 'font-awesome-new/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
     <link href="{% static 'css/slick.css' %}" rel="stylesheet">
-        <link href="{% static 'css/my_css.css' %}" rel="stylesheet">
+    <link href="{% static 'css/my_css.css' %}" rel="stylesheet" type="text/css" media="all">
+    <link href="{% static 'css/test.css' %}" rel="stylesheet">
+
       <!-- CSS FILES End -->
+    {% block head %}
+    {% endblock %}
    </head>
    <body>
+        <!-- top nav -->
+        <div class="container-fluid top-nav-container p-sm-2">
+            <div class="row">
+                <div class="top-nav-left mb-2">
+                    <a href="" class="mr-3"> <i class="fas fa-phone"></i> +254 7123456789</a>
+                    <a href=""><i class="fas fa-envelope"></i> contact@tuitmei.com</a>
+                </div>
+                <div class="offset-lg-6 offset-2">
+                    <div class="top-nav-right ">
+                   <a href="" ><i class="fa fa-facebook" ></i></a>
+                </div>
+                <div class="top-nav-right">
+                   <a href="" ><i class="fa fa-pinterest" ></i></a>
+                </div>
+                <div class="top-nav-right">
+                   <a href="" ><i class="fa fa-twitter" ></i></a>
+                </div>
+                <div class="top-nav-right">
+                   <a href="" ><i class="fa fa-reddit" ></i></a>
+                </div>
+                <div class="top-nav-right">
+                   <a href="" ><i class="fa fa-linkedin" ></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
        <div class="wrapper home2">
      <!-- Top Navigation -->
-
-        <ul class="nav" style="background: #1b1e21">
-           <div class="container-fluid">
-               <div class="row">
-                    <li class="nav-item ml-lg-3">
-                        <a href="#" class="nav-link" style="color: whitesmoke; font-size: 18px" ><i class="fas fa-phone"></i> +254 700-222-3333    <i class="fas fa-envelope"></i> email@turimei.com</a>
-                    </li>
-                   <li class="nav-item mr-auto offset-lg-7">
-                        <a href="#" class="mr-3 ml-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-facebook"></i></a>
-                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-twitter"></i></a>
-                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-whatsapp"></i></a>
-                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-instagram"></i></a>
-                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-youtube"></i></a>
-                    </li>
-
-               </div>
-           </div>
-
-        </ul>
+{##}
+{#        <ul class="nav" style="background: #1b1e21">#}
+{#           <div class="container-fluid">#}
+{#               <div class="row">#}
+{#                    <li class="nav-item ml-lg-3">#}
+{#                        <a href="#" class="nav-link" style="color: whitesmoke; font-size: 18px" ><i class="fas fa-phone"></i> +254 700-222-3333    <i class="fas fa-envelope"></i> email@turimei.com</a>#}
+{#                    </li>#}
+{#                   <li class="nav-item mr-auto offset-lg-7">#}
+{#                        <a href="#" class="mr-3 ml-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-facebook"></i></a>#}
+{#                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-twitter"></i></a>#}
+{#                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-whatsapp"></i></a>#}
+{#                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-instagram"></i></a>#}
+{#                       <a href="#" class="mr-3" style="color: whitesmoke; font-size: 20px" ><i class="fab fa-youtube"></i></a>#}
+{#                    </li>#}
+{##}
+{#               </div>#}
+{#           </div>#}
+{##}
+{#        </ul>#}
 
         <!--Header Start-->
         <header class="header-style-2">
-        <nav class="navbar navbar-expand-lg ">
-        <a class="navbar-brand"  href="{% url 'service:index' %}"><img src="{% static 'images/my_images/logo3.png' %}" alt="" ></a>
+        <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand"  href="{% url 'service:index' %}"><img src="{% static 'images/my_images/logoo.png' %}" alt="" style="width: 210px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -99,7 +132,7 @@
              </li>
             <li class="nav-item"> <a class="nav-link" href="{% url 'service:contact' %}">Contact</a> </li>
           </ul>
-          <ul class="topnav-right">
+          <ul class="topnav-right" style="display: inline">
              <li> <a class="mdonate" href="{% url 'service:account' %}"><span>Become a Partner</span></a> </li>
              <li> <a class="search-icon" href="#search"> <i class="fas fa-search"></i> </a> </li>
              <li class="login-reg"> <a href="{% url 'service:account' %}">Login</a> | <a href="{% url 'service:account' %}">Signup</a> </li>

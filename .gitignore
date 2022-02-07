@@ -10,8 +10,13 @@ venv/
 
 # Database
 db.sqlite3
+.idea
+#static
+static/bootstrap-4.6.1-dist
 
-
+#app
+service/templates/test.html
+service/templates/holder.html
 # macOS
 ._*
 .DS_Store
