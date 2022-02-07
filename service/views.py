@@ -37,6 +37,10 @@ class HomeView(TemplateView):
     template_name = 'home.html'
 
 
+def test():
+    pass
+
+
 
 
 
